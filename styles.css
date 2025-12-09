@@ -40,43 +40,9 @@
      width: 300px;
  }
 
- .nome {
-     position: absolute;
-     top: 120px;
-     font-size: 30px;
-     color: white;
-     animation: piscar 1s infinite alternate;
-     backdrop-filter: blur(5px);
-     padding: 10px;
-     width: 100%;
-     text-align: center;
- }
 
- @keyframes piscar {
-     0% {
-         color: #ff0000;
-     }
 
-     20% {
-         color: #ff9900;
-     }
 
-     40% {
-         color: #ffff00;
-     }
-
-     60% {
-         color: #00ff00;
-     }
-
-     80% {
-         color: #00ccff;
-     }
-
-     100% {
-         color: #2f00ff;
-     }
- }
 
  .botao-comecar {
      padding: 10px;
