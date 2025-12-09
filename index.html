@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&family=Playwrite+NO:wght@100..400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <section class="placar none">
+        
+    </section>
+    <section class="login none">
+        <div>
+            <h3>Digite seu nome</h3>
+            <input type="text" name="nome" id="nomeUsuario" required>
+            <button id="btn-registrar">Enviar</button>
+        </div>
+    </section>
+    <section id="tela-inicial" class="tela-inicial">
+        <div class="main">
+            <h2 class="nome">Aniversário do Davi</h2>
+            <h2 class="titulo">Contador<br> de <br>peças</h2>
+            <button type="button" id="botao-comecar" class="botao-comecar">Começar</button>
+            <button type="button" id="verRanking2" class="verRankingTelaPrincipal">Ranking</button>
+        </div>
+    </section>
+
+    <section id="tela-principal" class="tela-principal none">
+        <div class="itens">
+            <div class="peca">
+                <img src="images/uramaki.jpg" alt="">
+                <h2>Uramaki</h2>
+                <div class="buttons">
+                    <div id="botao-menos-uramaki" class="botoesmenos">-</div>
+                    <span id="uramaki">0</span>
+                    <div id="botao-mais-uramaki" class="botoesmais">+</div>
+                </div>
+            </div>
+            <div class="peca">
+                <img src="images/sashimi.jpg" alt="">
+                <h2>Sashimi</h2>
+                <div class="buttons">
+                    <div id="botao-menos-sashimi" class="botoesmenos">-</div>
+                    <span id="sashimi">0</span>
+                    <div id="botao-mais-sashimi" class="botoesmais">+</div>
+                </div>
+            </div>
+            <div class="peca">
+                <img src="images/joe.jpg" alt="">
+                <h2>Joes</h2>
+                <div class="buttons">
+                    <div id="botao-menos-joe" class="botoesmenos">-</div>
+                    <span id="joe">0</span>
+                    <div id="botao-mais-joe" class="botoesmais">+</div>
+                </div>
+            </div>
+            <div class="peca">
+                <img src="images/hot.jpg" alt="">
+                <h2>Hots</h2>
+                <div class="buttons">
+                    <div id="botao-menos-hot" class="botoesmenos">-</div>
+                    <span id="hot">0</span>
+                    <div id="botao-mais-hot" class="botoesmais">+</div>
+                </div>
+            </div>
+            <div class="peca">
+                <img src="images/harumaki.jpg" alt="">
+                <h2>Harumakis</h2>
+                <div class="buttons">
+                    <div id="botao-menos-harumaki" class="botoesmenos">-</div>
+                    <span id="harumaki">0</span>
+                    <div id="botao-mais-harumaki" class="botoesmais">+</div>
+                </div>
+            </div>
+            <div class="peca">
+                <img src="images/temaki.jpg" alt="">
+                <h2>Temakis</h2>
+                <div class="buttons">
+                    <div id="botao-menos-temaki" class="botoesmenos">-</div>
+                    <span id="temaki">0</span>
+                    <div id="botao-mais-temaki" class="botoesmais">+</div>
+                </div>
+            </div>
+            <div class="peca">
+                <img src="images/niguiri.jpg" alt="">
+                <h2>Niguiri</h2>
+                <div class="buttons">
+                    <div id="botao-menos-nigiri" class="botoesmenos">-</div>
+                    <span id="niguiri">0</span>
+                    <div id="botao-mais-nigiri" class="botoesmais">+</div>
+                </div>
+            </div>
+            <div class="peca">
+                <img src="images/images.jpg" alt="">
+                <h2>Entradas</h2>
+                <div class="buttons">
+                    <div id="botao-menos-entradas" class="botoesmenos">-</div>
+                    <span id="entradas">0</span>
+                    <div id="botao-mais-entradas" class="botoesmais">+</div>
+                </div>
+            </div>
+        </div>
+        <button type="button" id="botao-finalizar">Finalizar</button>
+    </section>
+    <section class="tela-final none">
+        <div class="content">
+            <h2>Parabéns, você comeu:</h2>
+            <p><span id="total-uramaki"></span> Uramakis</p>
+            <p><span id="total-sashimi"></span> Sashimis</p>
+            <p><span id="total-joe"></span> Joes</p>
+            <p><span id="total-hot"></span> Hots</p>
+            <p><span id="total-harumaki"></span> Harumakis</p>
+            <p><span id="total-temaki"></span> Temakis</p>
+            <p><span id="total-nigiri"></span> Nigiris</p>
+            <p><span id="total-entradas"></span> Entradas</p>
+            <h3>Total: <span id="total-pecas"></span> peças!!</h3>
+            <button id="verRanking">Ranking</button>
+        </div>
+    </section>
+    <script type="module" src="index.js"></script>
+</body>
+
+</html>
